@@ -71,14 +71,14 @@ export default class HttpAuth extends React.Component {
           <Markdown source={ schema.get("description") } />
         </Row>
         <Row>
-          <label>Username:</label>
+          <label>app_id:</label>
           {
             username ? <code> { username } </code>
               : <Col><Input type="text" required="required" name="username" aria-label="auth-basic-username" onChange={ this.onChange } autoFocus/></Col>
           }
         </Row>
         <Row>
-          <label>Password:</label>
+          <label>app_key:</label>
             {
               username ? <code> ****** </code>
                        : <Col><Input autoComplete="new-password"
