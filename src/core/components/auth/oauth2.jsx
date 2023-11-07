@@ -159,7 +159,7 @@ export default class Oauth2 extends React.Component {
           flow !== AUTH_FLOW_PASSWORD ? null
             : <Row>
               <Row>
-                <label htmlFor="oauth_username">username:</label>
+                <label htmlFor="oauth_username">app_id:</label>
                 {
                   isAuthorized ? <code> { this.state.username } </code>
                     : <Col tablet={10} desktop={10}>
@@ -171,7 +171,7 @@ export default class Oauth2 extends React.Component {
 
               }
               <Row>
-                <label htmlFor="oauth_password">password:</label>
+                <label htmlFor="oauth_password">app_key:</label>
                 {
                   isAuthorized ? <code> ****** </code>
                     : <Col tablet={10} desktop={10}>
